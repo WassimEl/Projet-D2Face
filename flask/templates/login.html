@@ -1,0 +1,22 @@
+{% extends 'base_block.html' %}
+
+{% block content %}
+
+<h1>{% block title %} D2Face {% endblock %}</h1>
+
+<div class="login-container">
+    <h2>Connexion</h2>
+    <form action="{{ url_for('submit_login') }}" method="POST">
+        <div class="input-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Se connecter</button>
+    </form>
+</div>
+    
+{% endblock %}
