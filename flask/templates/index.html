@@ -1,21 +1,20 @@
-{% extends 'base_block.html' %}
-
-{% block content %}
+{% extends 'base_block.html' %} {% block content %}
 
 <h1>{% block title %} D2Face {% endblock %}</h1>
 
 <div class="menu">
-    <a href="#">Accueil</a>
-    <a href="#">Personnage</a>
-    <a href="#">Campagne</a>
-    <div class="user-info">
-        <span>username</span>
-        <a href="#">Déconnexion</a>
-    </div>
+  <a href="#">Accueil</a>
+  <a href="#">Personnage</a>
+  <a href="#">Campagne</a>
+  <div class="user-info">
+    <span>username</span>
+    <a href="#">Déconnexion</a>
+    <!-- add connect or disconnect depend of state -->
+  </div>
 </div>
 
 <div class="content">
-    <h2>Bienvenue</h2>
+  <h2>Bienvenue</h2>
 </div>
-    
+
 {% endblock %}
