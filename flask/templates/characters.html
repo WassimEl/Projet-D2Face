@@ -1,0 +1,40 @@
+{% extends 'base_block.html' %} {% block content %}
+
+<div class="main-container">
+  <h1>Liste des personnages</h1>
+
+  <div class="menu">
+    <a href="/">Accueil</a>
+    <a href="characters">Personnages</a>
+    <a href="campaigns">Campagnes</a>
+    <div class="user-info">
+      <a href="login">Connexion</a>
+    </div>
+  </div>
+
+  <div class="content-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Classe</th>
+          <th>Niveau</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Personnage 1</td>
+          <td>Guerrier</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Personnage 2</td>
+          <td>Mage</td>
+          <td>3</td>
+        </tr>
+        <!-- Ajoutez d'autres lignes de tableau pour chaque personnage -->
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
